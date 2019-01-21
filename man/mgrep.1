@@ -1,0 +1,22 @@
+.TH MGREP 1
+.SH NAME
+mgrep \- print lines that match millions of strings efficiently
+.SH SYNOPSIS
+.B mgrep
+[\fB\-m\fR \fIMODE\fR]
+[\fB\-\-mode=\fR\fIMODE\fR]
+[\fB\-\-help]
+[\fB\-\-version]
+.SH DESCRIPTION
+.B mgrep
+is a tool developed by Manhong Dai and Fan Meng in MBNI, U of Michigan. A typical use case is to match millions of varations of ontological terms in free text, such as https://www.bioontology.org/wiki/Annotator_Web_service.
+
+--help for detail, --version for version, copyright and citation.
+
+website is http://brainarray.mbni.med.umich.edu/mgrep/
+.SH OPTIONS
+.TP
+.BR \-m ", " \-\-mode =\fIMODE\fR
+mgrep has four running modes, batch-mapping, daemon-mapping,
+extend-dictionary and index-corpus.
+each mode has a different set of options.
