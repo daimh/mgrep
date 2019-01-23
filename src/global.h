@@ -6,4 +6,4 @@ bool IsUtf8(char *s);
 int ReadUnicodeOrDie(char **s);
 int HexToUnicode(char *s);
 int IntCompare(const void *m1, const void *m2);
-#endif  // MGREP_SRC_GLOBAL_H
+#endif // MGREP_SRC_GLOBAL_H
