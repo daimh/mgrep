@@ -75,7 +75,7 @@ void Usage() {
 "on single or multiple hosts for load balance. Currently there is a java\n"
 "version of mgrep client, other language versions are available upon request\n"
 "Example:\n"
-"	mgrep -f dict.txt -w wd_english.txt -w wd_chinese.txt -p 55555\n"
+"	mgrep -m daemon-mapping -d dict.txt -w wd_english.txt -w wd_chinese.txt -p 55555\n"
 "			 -d, --dictionary-file=FILE\n"
 "							as in batch-mapping mode\n"
 "			 -w, --word-divider=None|NonAlphanumeric|FILE\n"
