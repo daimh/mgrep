@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -ex
+echo -e "the longest one" |  mgrep match -d <(echo -e "1111\tlong\n2222\tlongest\n3333\tlongest one") -w NonAlphanumeric | md5sum | grep d06a2d10ed896842a6856607b2f4f68a
+echo -e "the longest one" |  mgrep match -d <(echo -e "1111\tlong\n2222\tlongest\n3333\tlongest one") -w NonAlphanumeric -l | md5sum | grep 2701e469cba4e5e0a5d30fcba15b3fbd

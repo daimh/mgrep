@@ -1,5 +1,5 @@
 AC_PREREQ([2.69])
-AC_INIT([mgrep], [20201006], [daimh@umich.edu])
+AC_INIT([mgrep], [20210402], [daimh@umich.edu])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign])
 AC_CONFIG_SRCDIR([config.h.in])
 AC_CONFIG_HEADERS([config.h])
