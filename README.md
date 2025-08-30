@@ -2,12 +2,13 @@
 
 **mgrep** efficiently prints lines that match **billions of strings**.  
 
-While Google can search billions of web pages for a keyword in a split second, **mgrep** is optimized for the opposite task: searching billions of keywords within a short piece of text in a split second.  
+While Google can search billions of web pages for a keyword in a split second, **mgrep** is optimized for the reverse problem: searching billions of keywords against a short piece of text, also in a split second.  
 
-It has been used as the backend for the [Annotator at the National Center for Biomedical Ontology](https://bioportal.bioontology.org/annotator) since 2009.  
+Under the hood, it uses a [Trie](https://en.wikipedia.org/wiki/Trie) for command 'match', and [Suffix Tree](https://en.wikipedia.org/wiki/Suffix_tree) algorithms for command 'index' and 'extend'.  
 
-If you are running **mgrep** in daemon mode, check out the Java client here: [mgrepclient-java](https://github.com/daimh/mgrepclient-java).  
+Since 2009, **mgrep** has been powering the backend of the [Annotator at the National Center for Biomedical Ontology](https://bioportal.bioontology.org/annotator).  
 
+If you run **mgrep** in daemon mode, check out the Java client: [mgrepclient-java](https://github.com/daimh/mgrepclient-java).  
 
 ## Install
 ```

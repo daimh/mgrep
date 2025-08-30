@@ -7,7 +7,7 @@
 template <class T>
 class TreeNode {
 	public:
-		TreeNode<T>(char *word, T *id_ptr, int id_size) {
+		TreeNode(char *word, T *id_ptr, int id_size) {
 			if (!word || !*word) {
 				fprintf(stderr, "Empty/Null word is not allowed\n");
 				exit(1);
@@ -16,7 +16,7 @@ class TreeNode {
 			right_ = down_ = NULL;
 			InitIdBuf(id_ptr, id_size);
 		}
-		~TreeNode<T>() {
+		~TreeNode() {
 			if (down_) delete down_;
 			if (right_) delete right_;
 			if (id_buf_) free(right_);
